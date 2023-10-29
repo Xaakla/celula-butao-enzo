@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>celula-butao</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="celular-div">
+        <div class="line">
+            <button class="button button-1" onclick="handleButton('1') ">1</button>
+            <button class="button button-2" onclick="handleButton('2') ">2 <small>abc</small></button>
+            <button class="button button-3" onclick="handleButton('3') ">3 <small>def</small></button>
+        </div>
+        <div class="line">
+            <button class="button button-4" onclick="handleButton('4') ">4
+                <small>ghi</small></button>
+            <button class="button button-5" onclick="handleButton('5') ">5
+                <small>jkl</small></button>
+            <button class="button button-6" onclick="handleButton('6') ">6
+                <small>mno</small></button>
+        </div>
+        <div class="line">
+            <button class="button button-7" onclick="handleButton('7') ">7
+                <small>pqrs</small></button>
+            <button class="button button-8" onclick="handleButton('8') ">8
+                <small>tuv</small></button>
+            <button class="button button-9" onclick="handleButton('9') ">9
+                <small>wxyz</small></button>
+        </div>
+        <div class="line">
+            <button class="button button-*" onclick="handleButton('*')">*</button>
+            <button class="button button-0" onclick="handleButton('0')">0</button>
+            <button class="button button-#" onclick="handleButton('#')">#</button>
+        </div>
+
+        <div class="user-input">
+            <input type="text" id="user-input" readonly onchange="handleTranslate(this.value)" />
+            <span id="result"></span>
+        </div>
+    </div>
+</body>
+</html>
